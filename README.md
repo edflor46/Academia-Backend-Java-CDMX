@@ -3,7 +3,7 @@ Ejercicios propuestos en las sesiones de la Academia Backend Java CDMX.
 
 ## Semana 1
 ### Orientación a objetos
-**Ejercicio 1**
+**Ejercicio 1  - Herencia**
 
 ![Ejercicio](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1627869371/Academia-Java.-CDMX/Ejercicios%20Academia-Java-CDMX/image001_t07ctl.png)
 
@@ -45,7 +45,7 @@ public class Bottom2 extends Top {
     </code>
 </pre>
 
-**Ejercicio 2**
+**Ejercicio 2 - Herencia**
 ![ejercicio2](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1627576234/Academia-Java.-CDMX/Ejercicios%20Academia-Java-CDMX/ejercicio2Herencia_btbiwb.png)
 
 **Respuesta**
@@ -83,7 +83,7 @@ public class Kinder extends AgedP{
 
 ## Semana 2
 ### Operadores
-**Ejercicio 1**
+**Ejercicio 1 - Operadores Compuestos**
 <pre>
     <code>
 Change the following program to use compound assignments:
@@ -174,7 +174,7 @@ public class ArithmeticDemo {
 
 ![Captura](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1627588702/Academia-Java.-CDMX/Ejercicios%20Academia-Java-CDMX/ejercicio_operadores_dgwrin.png)
 
-**Ejercicio 2**
+**Ejercicio 2 - Precremento / Postcremento**
 <pre>
     <code>
 In the following program, explain why the value "6" is printed twice in a row:
@@ -231,7 +231,7 @@ public class Incr {
 </pre>
 ![precremento](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1627589449/Academia-Java.-CDMX/Ejercicios%20Academia-Java-CDMX/precremento_vqkakz.png)
 
-**Ejercicio 3**
+**Ejercicio 3 - equals**
 <pre>
     <code>
 Given the following program, overrides the equals method to get the output:
@@ -304,7 +304,7 @@ public class Test {
 
 ![equals](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1627590488/Academia-Java.-CDMX/Ejercicios%20Academia-Java-CDMX/equals_bfu8zq.png)
 
-**Ejercicio 4**
+**Ejercicio 4 equals**
 <pre>
     <code>
 Write the missing code, and override the equals method in MyDate class, so that it can compare that when two MyDate objects have the same year, month and day, the result is true, otherwise false. The expected output is:
@@ -516,3 +516,47 @@ class MyDate {
 </pre>
 
 ![equals](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1627661499/Academia-Java.-CDMX/Ejercicios%20Academia-Java-CDMX/equals_2_zp6zpx.png)
+
+**Ejercicio 5 - Operadores Compuestos**
+![operadores_compuestos](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1627664969/Academia-Java.-CDMX/Ejercicios%20Academia-Java-CDMX/ejercicio5_klm44p.png)
+
+**Respuesta**
+<pre>
+    <code>
+package com.edflor.operadores;
+/**
+ *
+ * @author luis.flores.ramirez
+ */
+public class PrePostDemo {
+    public static void main(String[] args) {
+        //Inicia i con un valor de 3
+        int i = 3;
+        
+        //Postincremento, aumentara la proxima vez que se ejecute
+        i++;
+        
+        //Al ser llamado i cambia su valor de 3 a 4 debido al postincremento
+        System.out.println("i = " + i);  // "4"
+        
+        //Preincrement, i aumentara en 1 desde antes
+        ++i;
+        
+        //i vale 5
+        System.out.println("i = " + i);  // "5"
+        
+        //precremento i vale 6 debido a que se incremento antes
+        System.out.println("i = " + ++i);  // "6"
+
+        //postcremento i sigue valiendo 6, aumentara en 1 la proxima vez que sea ejecutado
+        System.out.println("i = " + i++);  // "6"
+        
+        //i vale 7 debido al postcremento
+        System.out.println("i = " + i);  // "7"
+
+    }
+}
+    </code>
+</pre>
+
+![ejercicio5_operadoresCompuestos](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1627667049/Academia-Java.-CDMX/Ejercicios%20Academia-Java-CDMX/Screenshot_37_fvq9ee.png)
