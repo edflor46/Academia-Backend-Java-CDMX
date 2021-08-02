@@ -80,3 +80,94 @@ public class Kinder extends AgedP{
 }
     </code>
 </pre>
+
+## Semana 2
+### Operadores
+**Ejercicio 1**
+<pre>
+    <code>
+Change the following program to use compound assignments:
+
+class ArithmeticDemo {
+
+ 
+
+    public static void main (String[] args){
+
+         
+
+        int result = 1 + 2; // result is now 3
+
+        System.out.println(result);
+
+ 
+
+        result = result - 1; // result is now 2
+
+        System.out.println(result);
+
+ 
+
+        result = result * 2; // result is now 4
+
+        System.out.println(result);
+
+ 
+
+        result = result / 2; // result is now 2
+
+        System.out.println(result);
+
+ 
+
+        result = result + 8; // result is now 10
+
+        result = result % 7; // result is now 3
+
+        System.out.println(result);
+
+ 
+
+    }
+
+}
+    </code>
+</pre>
+
+**Respuesta**
+<pre>
+    <code>
+package com.edflor.operadores;
+
+/**
+ *
+ * @author luis.flores.ramirez
+ */
+public class ArithmeticDemo {
+    public static void main(String[] args) {
+        int result = 1 + 2; // Result is now 3
+        System.out.println("result = " + result);
+        
+        //Operador compuesto -=
+        result -= 1; //Result is now 2
+        System.out.println("result =- : " + result);
+        
+        //Operador compuesto *=
+        result *= 2; //Result is now  4
+        System.out.println("result *= : " + result);
+        
+        //Operador compuesto /= 
+        result /= 2; //Result is now 2
+        System.out.println("result /= : " + result);
+        
+        //Operador compuesto +=
+        result +=8; //Result is now 10;
+        System.out.println("result += : " + result);
+        
+        //Operador compuesto %=
+        result %= 7; //Result is now 3
+        System.out.println("result %= : " + result);
+    }
+}
+    </code>
+</pre>
