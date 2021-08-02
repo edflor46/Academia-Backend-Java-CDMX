@@ -44,3 +44,39 @@ public class Bottom2 extends Top {
  */
     </code>
 </pre>
+
+**Ejercicio 2**
+![ejercicio2](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1627576234/Academia-Java.-CDMX/Ejercicios%20Academia-Java-CDMX/ejercicio2Herencia_btbiwb.png)
+
+**Respuesta**
+<pre>
+    <code>
+package com.edflor.herencia;
+
+/**
+ *
+ * @author luis.flores.ramirez
+ */
+class AgedP{
+    //Constructor vacio
+    AgedP(){}
+    
+    //Constructor con parametros
+    public AgedP(int x){
+        
+    }
+}
+
+//Herencia de la clase AgedP
+public class Kinder extends AgedP{
+    //Main
+    public static void main(String[] args) {
+        
+    }
+    //Constructor y uso de super
+    public Kinder(int x){
+        super(x);    
+    }
+}
+    </code>
+</pre>
