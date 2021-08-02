@@ -1,17 +1,7 @@
-# Academia Backend Java CDMX 
-Ejercicios propuestos en las sesiones de la Academia Backend Java CDMX.
-
-## Semana 1
-### Orientación a objetos
-**Ejercicio 1**
-
-![Ejercicio](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1627869371/Academia-Java.-CDMX/Ejercicios%20Academia-Java-CDMX/image001_t07ctl.png)
-
-**Respuesta**
-<pre>
-    <code>
 package com.edflor.herencia;
+
 /**
+ *
  * @author luis.flores.ramirez
  */
 class Top {
@@ -42,5 +32,3 @@ public class Bottom2 extends Top {
  * usando "Super" por tal motivo arrojara un error de compilacion
  *
  */
-    </code>
-</pre>
