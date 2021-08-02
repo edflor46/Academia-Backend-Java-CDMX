@@ -173,3 +173,61 @@ public class ArithmeticDemo {
 </pre>
 
 ![Captura](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1627588702/Academia-Java.-CDMX/Ejercicios%20Academia-Java-CDMX/ejercicio_operadores_dgwrin.png)
+
+**Ejercicio 2**
+<pre>
+    <code>
+In the following program, explain why the value "6" is printed twice in a row:
+
+class PrePostDemo {
+
+    public static void main(String[] args){
+
+        int i = 3;
+
+        i++;
+
+        System.out.println(i);    // "4"
+
+        ++i;                    
+
+        System.out.println(i);    // "5"
+
+        System.out.println(++i);  // "6"
+
+        System.out.println(i++);  // "6"
+
+        System.out.println(i);    // "7"
+
+    }
+
+}
+    </code>
+</pre>
+
+**Respuesta**
+<pre>
+    <code>
+package com.edflor.operadores;
+
+/**
+ *
+ * @author luis.flores.ramirez
+ */
+public class Incr {
+    public static void main(String[] args) {
+        Integer x = 7;
+        int y = 2;
+
+        x *= x; // Multiplica 7 * 7 = 49  
+        y *= y;  // Multiplica 2 * 2 = 4  
+        y *= y; // Multiplica 4 * 4 = 16
+        x -= y; // Resta 49 - 16 
+
+        System.out.println("x = " + x);
+    }
+}
+    </code>
+</pre>
+![precremento](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1627589449/Academia-Java.-CDMX/Ejercicios%20Academia-Java-CDMX/precremento_vqkakz.png)
+
