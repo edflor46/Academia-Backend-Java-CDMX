@@ -209,26 +209,41 @@ class PrePostDemo {
 <pre>
     <code>
 package com.edflor.operadores;
-
 /**
  *
  * @author luis.flores.ramirez
  */
-public class Incr {
+public class PrePostDemo {
     public static void main(String[] args) {
-        Integer x = 7;
-        int y = 2;
+        //Inicia i con un valor de 3
+        int i = 3;
+        
+        //Postincremento, aumentara la proxima vez que se ejecute
+        i++;
+        
+        //Al ser llamado i cambia su valor de 3 a 4 debido al postincremento
+        System.out.println("i = " + i);  // "4"
+        
+        //Preincrement, i aumentara en 1 desde antes
+        ++i;
+        
+        //i vale 5
+        System.out.println("i = " + i);  // "5"
+        
+        //precremento i vale 6 debido a que se incremento antes
+        System.out.println("i = " + ++i);  // "6"
 
-        x *= x; // Multiplica 7 * 7 = 49  
-        y *= y;  // Multiplica 2 * 2 = 4  
-        y *= y; // Multiplica 4 * 4 = 16
-        x -= y; // Resta 49 - 16 
+        //postcremento i sigue valiendo 6, aumentara en 1 la proxima vez que sea ejecutado
+        System.out.println("i = " + i++);  // "6"
+        
+        //i vale 7 debido al postcremento
+        System.out.println("i = " + i);  // "7"
 
-        System.out.println("x = " + x);
     }
 }
     </code>
 </pre>
+
 ![precremento](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1627589449/Academia-Java.-CDMX/Ejercicios%20Academia-Java-CDMX/precremento_vqkakz.png)
 
 **Ejercicio 3 - equals**
@@ -524,36 +539,22 @@ class MyDate {
 <pre>
     <code>
 package com.edflor.operadores;
+
 /**
  *
  * @author luis.flores.ramirez
  */
-public class PrePostDemo {
+public class Incr {
     public static void main(String[] args) {
-        //Inicia i con un valor de 3
-        int i = 3;
-        
-        //Postincremento, aumentara la proxima vez que se ejecute
-        i++;
-        
-        //Al ser llamado i cambia su valor de 3 a 4 debido al postincremento
-        System.out.println("i = " + i);  // "4"
-        
-        //Preincrement, i aumentara en 1 desde antes
-        ++i;
-        
-        //i vale 5
-        System.out.println("i = " + i);  // "5"
-        
-        //precremento i vale 6 debido a que se incremento antes
-        System.out.println("i = " + ++i);  // "6"
+        Integer x = 7;
+        int y = 2;
 
-        //postcremento i sigue valiendo 6, aumentara en 1 la proxima vez que sea ejecutado
-        System.out.println("i = " + i++);  // "6"
-        
-        //i vale 7 debido al postcremento
-        System.out.println("i = " + i);  // "7"
+        x *= x; // Multiplica 7 * 7 = 49  
+        y *= y;  // Multiplica 2 * 2 = 4  
+        y *= y; // Multiplica 4 * 4 = 16
+        x -= y; // Resta 49 - 16 
 
+        System.out.println("x = " + x);
     }
 }
     </code>
