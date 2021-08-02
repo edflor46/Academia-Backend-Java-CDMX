@@ -171,3 +171,5 @@ public class ArithmeticDemo {
 }
     </code>
 </pre>
+
+![Captura](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1627588702/Academia-Java.-CDMX/Ejercicios%20Academia-Java-CDMX/ejercicio_operadores_dgwrin.png)
