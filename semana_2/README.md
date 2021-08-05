@@ -475,4 +475,3 @@ public class Incr {
 </pre>
 
 ![ejercicio5_operadoresCompuestos](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1627667049/Academia-Java.-CDMX/Ejercicios%20Academia-Java-CDMX/Screenshot_37_fvq9ee.png)
-
