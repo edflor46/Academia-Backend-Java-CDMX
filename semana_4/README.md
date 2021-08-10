@@ -1,6 +1,6 @@
 ## Semana 4
 ### Strings
-**Ejercicio 1 - Formas de concatenar**
+**Formas de concatenar**
 
 <pre>
     <code>      
@@ -38,63 +38,28 @@ public class Ejercicio1 {
 
 ![Concatenar](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1628614518/Academia-Java.-CDMX/Ejercicios%20Academia-Java-CDMX/concatenar_strings_rrnhk3.png)
 
-**Ejercicio 2 - while**
+**Inmutabilidad**
 <pre>
     <code>
-Given the output:
-DooBeeDooBeeDo
-
-Fill in the missing code:
-
-public class DooBee {
-
-  public static void main (String[] args) {
-
-    int x = 1;
-
-    while (x < _____ ) {
-
-      System.out._________(“Doo”);
-
-      System.out._________(“Bee”);
-
-      x = x + 1;
-
-    }
-
-    if (x == ______ ) {
-
-      System.out.print(“Do”);
-
-    }
-
-  }
-
-}
-    </code>
-</pre>
-
-**Respuesta**
-<pre>
-    <code>
-package com.edflor.controlFlujo;
+package com.edflor.ejercicios;
 /**
  *
  * @author luis.flores.ramirez
  */
-public class DooBee {
+public class StringImmutability {
     public static void main(String[] args) {
-        int x = 1;
-        while (x < 3) { //Mientras x sea menor a 3 se imprimira "Doo" "Bee" las veces que itere el bucle           
-            System.out.printf("Doo");
-            System.out.printf("Bee");
-            x = x + 1; // x aumenta en 1
-        }
-        if (x == 3) {
-            System.out.printf("Do"); //x al valer 3 se saldra del bucle e imprimira "Do"
-        }
-    }
+		// Instance the strings
+		String s1 = "Hello";
+		String s2 = s1.concat(" world");
+		String s3 = s2.toUpperCase();
+		
+		// Prints each string value
+		System.out.println("s1: " + s1);
+		System.out.println("s2: " + s2);
+		System.out.println("s3: " + s3);
+	}
 }
     </code>
 </pre>
-![while](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1628193607/Academia-Java.-CDMX/Ejercicios%20Academia-Java-CDMX/Screenshot_65_ondoma.png)
+
+![inmutabilidad](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1628615205/Academia-Java.-CDMX/Ejercicios%20Academia-Java-CDMX/inmutability_xl1yd1.png)
