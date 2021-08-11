@@ -163,6 +163,35 @@ public class List {
 
 ![List](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1628696744/Academia-Java.-CDMX/Ejercicios%20Academia-Java-CDMX/List_ycixgn.png)
 
+**Map**
+<pre>
+    <code>
+import java.util.Collection;
+import java.util.HashMap;
+/**
+ *
+ * @author luis.flores.ramirez
+ */
+public class Map {
+    public static void main(String[] args) {
+         java.util.Map miMapa = new HashMap();
+        miMapa.put("valor1", "Eduardo");
+        miMapa.put("VAlor2", "Luis");
+        miMapa.put("VAlor3", "Rosario");
+        
+        imprimir(miMapa.values());
+    }
+    
+    public static void imprimir(Collection coleccion){
+        coleccion.forEach(elemento -> {
+            System.out.println("elemento = " + elemento);
+        });
+    }
+}</code>
+</pre>
+
+![map](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1628697832/Academia-Java.-CDMX/Ejercicios%20Academia-Java-CDMX/map_w6sxry.png)
+
 
 ### Genericos
 **Clase Generica**
