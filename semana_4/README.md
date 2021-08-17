@@ -275,7 +275,41 @@ F. If the hashCode() method is uncommented the code will not compile
 </pre>
 ![map](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1629231797/Academia-Java.-CDMX/Ejercicios%20Academia-Java-CDMX/MapQ_mpkp1a.png)
 
+**Ejercicio List - Kathy Sierra**
+<pre>
+    <code>
+Given:
+public static void main(String[] args) {
+// INSERT DECLARATION HERE
+for (int i = 0; i <= 10; i++) {
+List<Integer> row = new ArrayList<Integer>();
+for (int j = 0; j <= 10; j++)
+row.add(i * j);
+table.add(row);
+}
+for (List<Integer> row : table)
+System.out.println(row);
+}
+Which statements could be inserted at // INSERT DECLARATION HERE to allow this code to
+compile and run? (Choose all that apply.)
+A. List<List<Integer>> table = new List<List<Integer>>();
+B. List<List<Integer>> table = new ArrayList<List<Integer>>();
+C. List<List<Integer>> table = new ArrayList<ArrayList<Integer>>();
+D. List<List, Integer> table = new List<List, Integer>();
+E. List<List, Integer> table = new ArrayList<List, Integer>();
+F. List<List, Integer> table = new ArrayList<ArrayList, Integer>();
+G. None of the above
+    </code>
+</pre>
 
+**Respuesta**
+<pre>
+    <code>
+    B is correct.
+    </code>
+</pre>
+
+![List](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1629232595/Academia-Java.-CDMX/Ejercicios%20Academia-Java-CDMX/List-Kathy_jzmvbz.png)
 
 ### Genericos
 **Clase Generica**
@@ -323,6 +357,7 @@ public class Genericos{
 }
     </code>
 </pre>
+
 ![Generics](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1628653426/Academia-Java.-CDMX/Ejercicios%20Academia-Java-CDMX/Generics_sctqgy.png)
 
 **Colecciones Genericas**
