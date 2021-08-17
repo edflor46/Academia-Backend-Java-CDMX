@@ -192,7 +192,7 @@ public class Map {
 
 ![map](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1628697832/Academia-Java.-CDMX/Ejercicios%20Academia-Java-CDMX/map_w6sxry.png)
 
-**Ejercicio Libro Katy Sierra**
+**Ejercicio Collection - Khaty Sierra**
 <pre>
     <code>
 ordenar alfabéticamente una ArrayList of Strings.
@@ -232,6 +232,49 @@ public class ArrayListAlfabeticamente {
 </pre>
 
 ![Collections](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1629226585/Academia-Java.-CDMX/Ejercicios%20Academia-Java-CDMX/collections_1_nxc6zm.png)
+
+**Ejercicio Map - Kathy Sierra**
+<pre>
+    <code>
+Given:
+import java.util.*;
+class MapEQ {
+public static void main(String[] args) {
+Map<ToDos, String> m = new HashMap<ToDos, String>();
+ToDos t1 = new ToDos("Monday");
+ToDos t2 = new ToDos("Monday");
+ToDos t3 = new ToDos("Tuesday");
+m.put(t1, "doLaundry");
+m.put(t2, "payBills");
+m.put(t3, "cleanAttic");
+System.out.println(m.size());
+} }
+class ToDos{
+String day;
+ToDos(String d) { day = d; }
+public boolean equals(Object o) {
+return ((ToDos)o).day == this.day;
+}
+// public int hashCode() { return 9; }
+}
+Which is correct? (Choose all that apply.)
+A. As the code stands it will not compile
+B. As the code stands the output will be 2
+C. As the code stands the output will be 3
+D. If the hashCode() method is uncommented the output will be 2
+E. If the hashCode() method is uncommented the output will be 3
+F. If the hashCode() method is uncommented the code will not compile
+    </code>
+</pre>
+
+**Respuesta**
+<pre>
+    <code>
+        C and D are correct.
+    </code>
+</pre>
+![map](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1629231797/Academia-Java.-CDMX/Ejercicios%20Academia-Java-CDMX/MapQ_mpkp1a.png)
+
 
 
 ### Genericos
