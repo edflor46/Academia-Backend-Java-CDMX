@@ -458,3 +458,44 @@ G. An exception is thrown at runtime
 
 ![generics](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1629233283/Academia-Java.-CDMX/Ejercicios%20Academia-Java-CDMX/Generics_2_vnvug3.png)
 
+**Ejercicio Genericos - Kathy Sierra**
+<pre>
+    <code>
+Given:
+3. import java.util.*;
+4. public class Magellan {
+5. public static void main(String[] args) {
+6. TreeMap<String, String> myMap = new TreeMap<String, String>();
+7. myMap.put("a", "apple"); myMap.put("d", "date");
+8. myMap.put("f", "fig"); myMap.put("p", "pear");
+9. System.out.println("1st after mango: " + // sop 1
+10. myMap.higherKey("f"));
+11. System.out.println("1st after mango: " + // sop 2
+12. myMap.ceilingKey("f"));
+13. System.out.println("1st after mango: " + // sop 3
+14. myMap.floorKey("f"));
+15. SortedMap<String, String> sub = new TreeMap<String, String>();
+16. sub = myMap.tailMap("f");
+17. System.out.println("1st after mango: " + // sop 4
+18. sub.firstKey());
+19. }
+20. }
+Which of the System.out.println statements will produce the output 1st after mango: p?
+(Choose all that apply.)
+A. sop 1
+B. sop 2
+C. sop 3
+D. sop 4
+E. None; compilation fails
+F. None; an exception is thrown at runtime
+    </code>
+</pre>
+
+**Respuesta**
+<pre>
+    <code>
+    A. sop 1
+    </code>
+</pre>
+
+![generics](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1629233910/Academia-Java.-CDMX/Ejercicios%20Academia-Java-CDMX/generics_2_h8dpqt.png)
