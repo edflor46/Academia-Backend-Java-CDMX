@@ -421,3 +421,40 @@ public class ColeccionesGenericas {
 </pre>
 
 ![c_genericas](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1628654495/Academia-Java.-CDMX/Ejercicios%20Academia-Java-CDMX/Colecciones_genericos_ghxs0d.png)
+
+**Ejercicio Genericos - Kathy Sierra**
+<pre>
+    <code>
+Given:
+3. import java.util.*;
+4. class Dog { int size; Dog(int s) { size = s; } }
+5. public class FirstGrade {
+6. public static void main(String[] args) {
+7. TreeSet<Integer> i = new TreeSet<Integer>();
+8. TreeSet<Dog> d = new TreeSet<Dog>();
+9.
+10. d.add(new Dog(1)); d.add(new Dog(2)); d.add(new Dog(1));
+11. i.add(1); i.add(2); i.add(1);
+12. System.out.println(d.size() + " " + i.size());
+13. }
+
+What is the result?
+A. 1 2
+B. 2 2
+C. 2 3
+D. 3 2
+E. 3 3
+F. Compilation fails
+G. An exception is thrown at runtime
+    </code>
+</pre>
+
+**Respuesta**
+<pre>
+    <code>
+        G. An exception is thrown at runtime
+    </code>
+</pre>
+
+![generics](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1629233283/Academia-Java.-CDMX/Ejercicios%20Academia-Java-CDMX/Generics_2_vnvug3.png)
+
