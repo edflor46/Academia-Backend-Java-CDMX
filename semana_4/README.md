@@ -192,6 +192,47 @@ public class Map {
 
 ![map](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1628697832/Academia-Java.-CDMX/Ejercicios%20Academia-Java-CDMX/map_w6sxry.png)
 
+**Ejercicio Libro Katy Sierra**
+<pre>
+    <code>
+ordenar alfabéticamente una ArrayList of Strings.
+Resultado esperado:
+unsorted [Denver, Boulder, Vail, Aspen, Telluride]
+sorted [Aspen, Boulder, Denver, Telluride, Vail]
+    </code>
+</pre>
+
+**Respuesta**
+<pre>
+    <code>
+package com.edflor.collections;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+/**
+ *
+ * @author luis.flores.ramirez
+ */
+public class ArrayListAlfabeticamente {
+
+    public static void main(String[] args) {
+        ArrayList<String> stuff = new ArrayList<String>(); // #1
+        stuff.add("Denver");
+        stuff.add("Boulder");
+        stuff.add("Vail");
+        stuff.add("Aspen");
+        stuff.add("Telluride");
+        System.out.println("unsorted " + stuff);
+        Collections.sort(stuff); // #2
+        System.out.println("sorted " + stuff);
+    }
+}
+    </code>
+</pre>
+
+![Collections](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1629226585/Academia-Java.-CDMX/Ejercicios%20Academia-Java-CDMX/collections_1_nxc6zm.png)
+
 
 ### Genericos
 **Clase Generica**
