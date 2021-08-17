@@ -499,3 +499,38 @@ F. None; an exception is thrown at runtime
 </pre>
 
 ![generics](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1629233910/Academia-Java.-CDMX/Ejercicios%20Academia-Java-CDMX/generics_2_h8dpqt.png)
+
+**Ejercicio Genericos - Kathy Sierra**
+<pre>
+    <code>
+Given:
+3. import java.util.*;
+4. class Business { }
+5. class Hotel extends Business { }
+6. class Inn extends Hotel { }
+7. public class Travel {
+8. ArrayList<Hotel> go() {
+9. // insert code here
+10. }
+11. }
+Which, inserted independently at line 9, will compile? (Choose all that apply.)
+A. return new ArrayList<Inn>();
+B. return new ArrayList<Hotel>();
+C. return new ArrayList<Object>();
+D. return new ArrayList<Business>();
+    </code>
+</pre>
+
+**Respuesta**
+<pre>
+    <code>
+    B. return new ArrayList<Hotel>();
+
+    public class Travel {
+    ArrayList<Hotel> go() {
+// insert code here
+        return new ArrayList<Hotel>();
+    }
+}
+    </code>
+</pre>
